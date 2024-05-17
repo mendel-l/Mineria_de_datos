@@ -3,7 +3,7 @@ const connection = require('../config/database');
 exports.getEvseByCadena = (req, res) => {
   const cadena = req.params.cadena;
   const query = `
-    SELECT phone 
+    SELECT phone
     FROM evse 
   `;
   const values = [`%${cadena}%`];
