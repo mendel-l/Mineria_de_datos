@@ -4,7 +4,6 @@ const port = 3000;
 const chargePointsRoutes = require('./routes/chargePoints');
 const evseRoutes = require('./routes/evse');
 
-
 app.use('/puntosDeCarga', chargePointsRoutes);
 app.use('/evse', evseRoutes);
 
